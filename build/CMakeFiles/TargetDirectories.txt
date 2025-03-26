@@ -1,4 +1,0 @@
-/root/project/async/build/CMakeFiles/server.dir
-/root/project/async/build/CMakeFiles/client.dir
-/root/project/async/build/CMakeFiles/edit_cache.dir
-/root/project/async/build/CMakeFiles/rebuild_cache.dir
