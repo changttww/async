@@ -1,0 +1,35 @@
+# 编译输出的可执行文件
+server
+client
+
+# CMake 生成的构建目录
+build/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# 临时文件和编辑器文件
+*.o
+*.a
+*.so
+*.out
+*.log
+*.swp
+*.swo
+*.tmp
+
+# VS Code 配置
+.vscode/
+
+# CLion 配置
+.idea/
+cmake-build-debug/
+cmake-build-release/
+
+# macOS 相关文件
+.DS_Store
+
+# Windows 相关文件
+Thumbs.db
+desktop.ini
