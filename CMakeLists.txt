@@ -16,9 +16,16 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
 # 找到 spdlog 库
 find_package(spdlog REQUIRED)
+
+# 添加头文件搜索路径，这个是全局的，复杂项目不推荐
+include_directories(${CMAKE_SOURCE_DIR})
+
 # 添加源文件
-add_executable(server server.cpp)
-add_executable(client client.cpp)
+add_executable(server server.cpp socket.cpp)
+target_include_directories(server PRIVATE ${CMAKE_SOURCE_DIR})
+add_executable(client client.cpp socket.cpp)
+target_include_directories(client PRIVATE ${CMAKE_SOURCE_DIR})
+
 
 # 链接 zlib 库
 
